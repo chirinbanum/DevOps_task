@@ -1,0 +1,19 @@
+DOCKER:
+# Install Docker
+sudo apt install docker.io -y  
+
+# Restart Docker service
+sudo service docker restart  
+
+# Check Docker status
+sudo service docker status  
+
+# Add current user to the Docker group
+sudo usermod -aG docker $USER  
+
+# Verify Docker installation
+docker images  
+docker ps  
+
+# Fix permission issues with Docker socket
+sudo chmod 666 /var/run/docker.sock  
