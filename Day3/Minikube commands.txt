@@ -1,0 +1,23 @@
+# Download Minikube
+curl -LO https://github.com/kubernetes/minikube/releases/latest/download/minikube-linux-amd64  
+
+# Install Minikube
+sudo install minikube-linux-amd64 /usr/local/bin/minikube && rm minikube-linux-amd64  
+
+# Start Minikube
+minikube start  
+
+# Check Minikube status
+minikube status  
+
+# Get running pods
+kubectl get pod  
+
+# Get deployments
+kubectl get deploy  
+
+# Get replicas
+kubectl get replica  
+
+# Get detailed pod information
+kubectl get pod -o wide  
